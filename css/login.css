@@ -1,6 +1,6 @@
 
 body{
-    background-color:#ffffff;
+    background:url(../images/w.jpg)
 }
 .ppr{
     margin-top:50px;
@@ -14,7 +14,7 @@ footer {
   }
 
 .makesmall{
-   margin-left:680px;
+   margin-left:530px;
    padding-top: 40px;
    
    
@@ -58,7 +58,7 @@ footer {
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: var(--primary-color);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,11 +184,17 @@ footer {
 }  */
 
 
+.s000{
+  color:white;
+  margin-left:400px;
+}
+
+
 
  @media  (min-width:600px) and (max-width: 1200px) {
    
    
-    .s1{
+    .s000{
         margin-left:480px;;
 }
 .makesmall{
@@ -221,7 +227,7 @@ footer
         
         padding-top:70px;
     }
-    .s1{
+    .s000{
         margin-left:10px;;
     }
 
