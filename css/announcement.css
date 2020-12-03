@@ -30,7 +30,7 @@
 .notsame{
     color:whitesmoke;
     font-size:25px;
-    margin-left:320px;
+    margin-left:390px;
     padding-top:100px;
     margin-top:-100px;
 
@@ -38,8 +38,8 @@
 .makeitppr{
     color:whitesmoke;
     font-size:55px;
-    padding-top:0px;
-    margin-left:450px;
+    padding-top:80px;
+    margin-left:490px;
     margin-top:40px;
 }
  nav{
@@ -411,7 +411,7 @@ header nav{
   
 }
 .makeitppr{
-  margin-top:100px;
+  margin-top:50px;
   font-size:30px;
   margin-left:90px;
 }
@@ -443,6 +443,7 @@ header nav{
 }
 .menu-wrap .hamburger {
   display:flex;
+  background-color: transparent;
 }
 .menu-wrap .hamburger>div {
   display:flex;
