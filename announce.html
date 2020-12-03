@@ -1,0 +1,257 @@
+<!-- <h1 class="text-light">Pure CSS Animated Gradient Background</h1> -->
+
+<!-- <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+	<a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="d-block btn btn-outline-light" download><i class="fas fa-file-download mr-2"></i>Download Source</a>
+	<a href="https://manuelpinto.in" target="_blank" class="d-block btn btn-outline-light">Visit my Website<i class="fas fa-external-link-square-alt ml-2"></i></a>
+</div> -->
+
+<!-- <h6 class="text-light small font-weight-bold"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Manuel Pinto</h6> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="./css/a.css">
+        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+
+    <script>
+        $(window).on("load", function () {
+            $(window).scroll(function () {
+                var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                $(".plsfade").each(function () {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                    /* If the element is completely within bounds of the window, fade it in */
+                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity") == 0) { $(this).fadeTo(500, 1); }
+                     } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity") == 1) { $(this).fadeTo(500, 0); }
+                    }
+                });
+            }).scroll(); //invoke scroll-handler on page-load
+        });
+    </script>
+</head>
+
+<body>
+    <header class="same">
+
+        <!-- <nav>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="events.html">
+                <li>Events</li>
+            </a>
+            <a href="#">
+                <li>Gallery</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>About us</li>
+            </a>
+            <a href="#">
+                <li>Academic</li>
+            </a>
+            <div class="icons">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="contactus.html"> <i class="fas fa-comment-dots"></i></a>
+                <a href="announce.html"><i class="fas fa-bell"></i></a>
+            </div>
+        </nav> -->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="makeitppr">Announcements</h1>
+
+        <p class="notsame">Like our work ? Well you can see all the new Updates here .</p>
+
+    </header>
+    <!-- <div>   
+        <h1>Ace Intro</h1>
+        <p class="down">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum blanditiis nostrum nulla alias voluptas
+            quisquam voluptatum, inventore dicta deserunt distinctio?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, maxime maiores iure expedita quam ab
+            similique fuga iste, odio rem perferendis saepe nemo accusamus vitae, ex consequatur beatae?
+            Perspiciatis, minima!
+        </p>
+    </div> -->
+    <!-- <button class=" btn-primary ppr23">View More</button> -->
+    <!-- <section class="row-11">
+        <<img src="./images/collang.jpg" alt="Gcoey"> -->
+
+    <!-- <div class="col-22">
+            <h1>Ace Intro</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum blanditiis nostrum nulla alias voluptas
+                quisquam voluptatum, inventore dicta deserunt distinctio?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quidem consequatur eius officia minus, illum eveniet voluptatibus praesentium placeat
+                officiis sunt distinctio qui numquam, beatae nostrum explicabo nulla eaque dolorum delectus.
+
+            </p>
+        </div>
+    </section> -->
+
+
+    <!-- <div class="card32">
+        <img src="./images/draw.jpg" alt="Avatar" style="width:100%">
+        <div class="container32">
+            <h4 class="plsfade text-center"><b>Poster Making</b></h4>
+            <p class="plsfade text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        
+        </div>
+
+    </div>
+
+    <div class="card33">
+        <img src="./images/draw.jpg" alt="Avatar" style="width:100%">
+        <div class="container33">
+            <h4 class="plsfade text-center"><b>Poster Making</b></h4>
+            <p class="plsfade text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+
+    <div class="card34">
+        <img src="./images/draw.jpg" alt="Avatar" style="width:100%">
+        <div class="container34">
+            <h4 class="plsfade text-center"><b>Poster Making</b></h4>
+            <p class="plsfade text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+     -->
+
+ 
+<!-- testing -->
+<div class="row">
+    <div class="column">
+      <div class="card12">
+          <img src="./images/draw.jpg" alt="Avatar" width="100%">
+        <h3>Card 1</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card12">
+          <img src="./images/draw.jpg" alt="Avatar" width="100%">
+        <h3>Card 2</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card12">
+          <img src="./images/draw.jpg" alt="Avatar" width="100%">
+        <h3>Card 3</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card12">
+          <img src="./images/draw.jpg" alt="Avatar" width="100%">
+        <h3>Card 4</h3>
+        <p>Some text</p>
+        <p>Some text</p>
+      </div>
+    </div>
+  </div>
+<!-- testing -->
+
+
+    <!-- <section class="row-12 flex-cont">
+        <img src="./images/collang.jpg" alt="Gcoey">
+        <div class="col-23">
+            <h1>Ace Intro</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum blanditiis nostrum nulla alias voluptas
+                quisquam voluptatum, inventore dicta deserunt distinctio?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, maxime maiores iure expedita quam ab
+                similique fuga iste, odio rem perferendis saepe nemo accusamus vitae, ex consequatur beatae?
+                Perspiciatis, minima!
+            </p>
+        </div>
+    </section> -->
+    <section class="row-13">
+        <div class="plsfade">
+        <img src="./images/a.png" alt="Gcoey">
+    </div>
+        <div class="col-24">
+       
+            <h1 id="test1">Want updates in your mail box ?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam eveniet illum harum dicta impedit fugiat
+                recusandae, ex pariatur sequi voluptatibus, autem dolorum sapiente. Perferendis ut porro nisi delectus
+                recusandae. Cumque.</p>
+              
+                <form action="" class="s123">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="Your Name..." class="new">
+                    <h3>Email</h3>
+                    <input type="text" placeholder="Your Email..." class="new"><br>
+                    <button class="btn btn-primary">Subscribe Us</button>
+            
+            
+            </div>
+
+
+        </div>
+      
+
+
+    </section>
+   
+
+
+    <footer>
+        <!-- <nav class="footer-nav-bar ">
+            <a href="#">
+                <li>Email</li>
+            </a>
+            <a href="#">
+                <li>About us</li>
+            </a>
+            <a href="#">
+                <li>Contact us</li>
+            </a>
+            <a href="#">
+                <li>Gallery</li>
+            </a>
+        </nav> -->
+    </footer>
+</body>
+
+</html>
+<!-- <script??? src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script???> -->
